@@ -1,4 +1,4 @@
-import EnquiryForm from "./EnquiryForm";
+import DemoForm from "./DemoForm";
 
 const TICKS = ["Free career counselling", "No registration fee", "Placement support included"];
 
@@ -22,7 +22,9 @@ export default function FinalCta() {
           </ul>
         </div>
 
-        <EnquiryForm />
+        <div className="cta__formwrap reveal">
+          <DemoForm source="Enquiry form" />
+        </div>
       </div>
     </section>
   );

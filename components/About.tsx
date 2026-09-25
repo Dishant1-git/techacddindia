@@ -8,7 +8,7 @@ export default function About() {
         <div className="about__left reveal">
           <span className="eyebrow">About Us</span>
           <h2 className="h2">
-            Two <em>decades</em> of turning students into engineers
+            A <em>decade</em> of turning students into engineers
           </h2>
           <p className="lede">
             techcadd is an IT company that trains the people who build with it. Every course is taught
@@ -16,7 +16,7 @@ export default function About() {
             and your mentor is an engineer who still writes code for a living.
           </p>
           <div className="about__actions">
-            <a className="btn btn--primary" href="#categories">
+            <a className="btn btn--primary" href="#courses">
               Find your course
             </a>
             <a className="btn btn--outline" href={CONTACT.phoneHref}>

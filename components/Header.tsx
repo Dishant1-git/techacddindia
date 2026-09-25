@@ -6,7 +6,6 @@ import { ChevronDown } from "./Icons";
 import {
   AI_DEVELOPMENT,
   AI_FUNDAMENTALS,
-  BRANCHES,
   CERTIFICATE_LINKS,
   CONTACT,
   COURSE_LINKS,
@@ -28,7 +27,7 @@ const TAG_LABEL: Record<NavTag, string> = {
 };
 
 /* Sections tracked for the active-link underline, in document order. */
-const TRACKED = ["about", "categories", "courses", "why", "reviews", "faq", "blogs"];
+const TRACKED = ["about", "courses", "branches", "reviews", "enquire"];
 
 export default function Header() {
   const [stuck, setStuck] = useState(false);
@@ -90,9 +89,6 @@ export default function Header() {
             <a className={navClass("#about")} href="#about">
               About
             </a>
-            <a className="nav__link" href="#about">
-              Founder
-            </a>
 
             {/* AI mega menu */}
             <div className="nav__item has-mega">
@@ -139,7 +135,7 @@ export default function Header() {
               </button>
               <div className="drop">
                 {COURSE_LINKS.map((label) => (
-                  <a key={label} href="#categories">
+                  <a key={label} href="#courses">
                     {label}
                   </a>
                 ))}
@@ -161,6 +157,10 @@ export default function Header() {
 
             <a className={navClass("#courses")} href="#courses">
               After 12th
+            </a>
+
+            <a className={navClass("#branches")} href="#branches">
+              Branches
             </a>
 
             <div className="nav__item has-drop">
@@ -194,20 +194,6 @@ export default function Header() {
               <span />
               <span />
             </button>
-          </div>
-        </div>
-
-        <div className="branchbar">
-          <div className="shell branchbar__inner">
-            <span className="branchbar__label">Branches</span>
-            {BRANCHES.map((branch) => (
-              <a key={branch} href="#" className={branch === "Jalandhar" ? "is-active" : undefined}>
-                {branch}
-              </a>
-            ))}
-            <a href="#enquire" className="branchbar__contact">
-              Contact
-            </a>
           </div>
         </div>
       </header>

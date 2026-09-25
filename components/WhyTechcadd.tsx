@@ -12,7 +12,7 @@ export default function WhyTechcadd() {
             The <em>techcadd</em> Difference
           </h2>
           <p className="lede">
-            For nearly two decades we&apos;ve been the training partner students and employers in
+            For nearly a decade we&apos;ve been the training partner students and employers in
             Jalandhar keep coming back to, with 25,000+ engineers trained and a hiring network that
             answers when we call.
           </p>

@@ -1,12 +1,25 @@
-type Props = { light?: boolean };
+import Image from "next/image";
+import logo from "@/public/logo-techcadd.png";
+
+type Props = {
+  /** Inverts the navy wordmark to white, for use on the dark footer. */
+  light?: boolean;
+};
 
 export default function Logo({ light = false }: Props) {
   return (
-    <a className={light ? "logo logo--light" : "logo"} href="#top">
-      <span className="logo__mark">&lt;/&gt;</span>
-      <span className="logo__text">
-        techcadd<em>Jalandhar</em>
-      </span>
+    <a
+      className={light ? "logo logo--light" : "logo"}
+      href="#top"
+      aria-label="techcadd — Your Skill & Technology Partner"
+    >
+      <Image
+        src={logo}
+        alt="techcadd"
+        className="logo__img"
+        priority
+        sizes="160px"
+      />
     </a>
   );
 }

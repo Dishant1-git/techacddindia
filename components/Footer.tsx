@@ -27,7 +27,7 @@ export default function Footer() {
             <Logo light />
             <p className="footer__tag">
               <strong>Your Skill &amp; Technology Partner.</strong> Training students since{" "}
-              <strong>2007</strong> with live projects, industry trainers and placement support.
+              <strong>2016</strong> with live projects, industry trainers and placement support.
             </p>
 
             <ul className="footer__contact">
@@ -80,7 +80,7 @@ export default function Footer() {
           <div className="footer__bottomlinks">
             <a href="#">Services</a>
             <a href="#">Gini AI</a>
-            <a href="#faq">FAQs</a>
+            <a href="#enquire">FAQs</a>
           </div>
         </div>
       </div>

@@ -8,7 +8,6 @@ export const CONTACT = {
 } as const;
 
 export const BRANCHES = [
-  "Chandigarh",
   "Mohali",
   "Ludhiana",
   "Phagwara",
@@ -52,24 +51,20 @@ export const CERTIFICATE_LINKS = [
 ];
 
 export const RESOURCE_LINKS = [
-  { label: "Blogs", href: "#blogs" },
-  { label: "FAQs", href: "#faq" },
   { label: "Student Reviews", href: "#reviews" },
-  { label: "Placement Support", href: "#why" },
+  { label: "Our Branches", href: "#branches" },
+  { label: "Placement Support", href: "#about" },
+  { label: "Enquire Now", href: "#enquire" },
 ];
 
 export const DRAWER_LINKS = [
   { label: "Home", href: "#top" },
   { label: "About", href: "#about" },
-  { label: "Founder", href: "#about" },
-  { label: "AI", href: "#courses" },
-  { label: "Courses", href: "#categories" },
-  { label: "Certificate Programs", href: "#about" },
-  { label: "After 12th", href: "#courses" },
-  { label: "Resources", href: "#blogs" },
-  { label: "Placement Support", href: "#why" },
+  { label: "Courses", href: "#courses" },
+  { label: "Branches", href: "#branches" },
   { label: "Student Reviews", href: "#reviews" },
-  { label: "FAQs", href: "#faq" },
+  { label: "Placement Support", href: "#about" },
+  { label: "Book a Demo", href: "#enquire" },
   { label: "Contact", href: "#enquire" },
 ];
 
@@ -80,7 +75,7 @@ export const HERO_STATS = [
   { value: 25000, suffix: "+", label: "Engineers trained" },
   { value: 500, suffix: "+", label: "Hiring partners" },
   { value: 92, suffix: "%", label: "Placement rate, 2025" },
-  { staticValue: "2007", label: "Training since" },
+  { staticValue: "2016", label: "Training since" },
 ] as const;
 
 /* ---------------- about ---------------- */
@@ -420,10 +415,10 @@ export const FOOTER_COLUMNS = [
   {
     title: "Courses",
     links: [
-      { label: "Programming", href: "#categories" },
-      { label: "AI & Data", href: "#categories" },
-      { label: "Digital Marketing", href: "#categories" },
-      { label: "Cyber & Cloud", href: "#categories" },
+      { label: "Programming", href: "#courses" },
+      { label: "AI & Data", href: "#courses" },
+      { label: "Digital Marketing", href: "#courses" },
+      { label: "Cyber & Cloud", href: "#courses" },
     ],
   },
   {
@@ -442,10 +437,11 @@ export const FOOTER_COLUMNS = [
     links: [
       { label: "About techcadd", href: "#about" },
       { label: "Our Founder", href: "#about" },
-      { label: "College Partnerships", href: "#why" },
-      { label: "Events", href: "#blogs" },
-      { label: "Gallery", href: "#blogs" },
-      { label: "Blogs", href: "#blogs" },
+      { label: "College Partnerships", href: "#about" },
+      { label: "Our Branches", href: "#branches" },
+      { label: "Events", href: "#reviews" },
+      { label: "Gallery", href: "#reviews" },
+      { label: "Blogs", href: "#reviews" },
       { label: "Reviews", href: "#reviews" },
       { label: "Contact Us", href: "#enquire" },
     ],
@@ -453,8 +449,8 @@ export const FOOTER_COLUMNS = [
   {
     title: "Support",
     links: [
-      { label: "FAQs", href: "#faq" },
-      { label: "Placement Support", href: "#why" },
+      { label: "FAQs", href: "#enquire" },
+      { label: "Placement Support", href: "#about" },
       { label: "Free Tools", href: "#" },
       { label: "Enquire Now", href: "#enquire" },
       { label: "Privacy Policy", href: "#" },
@@ -474,3 +470,158 @@ export const COURSE_OPTIONS = [
   "Cloud & DevOps",
   "CAD / CAM",
 ];
+
+/* =========================================================
+   Landing page: course catalogue, branches, Google reviews
+   Course names and grouping taken from techcaddjalandhar.com/courses
+   ========================================================= */
+
+export const COURSE_CATALOGUE = [
+  {
+    key: "programming",
+    label: "Programming",
+    blurb: "Languages and stacks, from first syntax to a deployed application.",
+    courses: [
+      { name: "Python", icon: "python", desc: "Syntax, data structures and automation — the language most AI and backend work starts from." },
+      { name: "Java", icon: "openjdk", desc: "OOP, collections and Spring fundamentals for enterprise and Android work." },
+      { name: "C & C++", icon: "cplusplus", desc: "Memory, pointers and data structures — the foundation interviews still test." },
+      { name: "Kotlin", icon: "kotlin", desc: "Modern JVM language and the default choice for new Android apps." },
+      { name: "Flutter App Development", icon: "flutter", desc: "One Dart codebase compiled to native Android and iOS apps." },
+      { name: "Web Designing", icon: "html5", desc: "HTML, CSS and responsive layout, from wireframe to a polished page." },
+      { name: "Web Development", icon: "javascript", desc: "JavaScript, APIs and the browser platform behind interactive sites." },
+      { name: "Full Stack Development", desc: "Frontend, backend, database and deployment taught as one track." },
+      { name: "MERN Stack", icon: "react", desc: "MongoDB, Express, React and Node — schema design through to deploy." },
+      { name: "MEAN Stack", icon: "angular", desc: "MongoDB, Express, Angular and Node for typed, enterprise-style apps." },
+      { name: "PHP Full Stack", icon: "php", desc: "Core PHP, Laravel and MySQL — the stack most Indian agencies run." },
+      { name: "Python + Django Full Stack", icon: "django", desc: "Django ORM, views and REST APIs, deployed on a real server." },
+    ],
+  },
+  {
+    key: "ai-data",
+    label: "AI & Data",
+    blurb: "Models, agents and analytics built the way production teams build them.",
+    courses: [
+      { name: "Artificial Intelligence", icon: "tensorflow", desc: "Search, reasoning and applied ML — the broad AI foundation course." },
+      { name: "Machine Learning", icon: "scikitlearn", desc: "Regression, classification and honest model evaluation with scikit-learn." },
+      { name: "Deep Learning", icon: "pytorch", desc: "Neural networks, CNNs and transformers in TensorFlow and PyTorch." },
+      { name: "Data Science", icon: "pandas", desc: "Statistics, Python and the full analysis pipeline through to a decision." },
+      { name: "Data Analytics", icon: "googleanalytics", desc: "Cleaning, querying and reporting on real business datasets." },
+      { name: "Power BI", desc: "DAX, data models and dashboards that stakeholders actually read." },
+      { name: "Tableau", desc: "Visual analytics and interactive dashboards from live data sources." },
+      { name: "Generative AI", icon: "huggingface", desc: "LLMs, diffusion models and how to build real products on top of them." },
+      { name: "Prompt Engineering", desc: "Structured prompting, evaluation and cost control for LLM apps." },
+      { name: "Agentic AI", desc: "Tool-using agents that plan, call APIs and finish multi-step tasks." },
+      { name: "RAG (Retrieval-Augmented Generation)", desc: "Embeddings, vector search and grounding an LLM in your own documents." },
+      { name: "ChatGPT & AI Tools", desc: "Practical day-to-day use of AI tools across real office workflows." },
+    ],
+  },
+  {
+    key: "marketing",
+    label: "Digital Marketing",
+    blurb: "Search, paid media, social and storefronts that actually convert.",
+    courses: [
+      { name: "Digital Marketing", icon: "googlemarketingplatform", desc: "Search, paid media, social and analytics taught as one funnel." },
+      { name: "Social Media Marketing", icon: "instagram", desc: "Content, community and paid social across Instagram and Facebook." },
+      { name: "Google Ads", icon: "googleads", desc: "Search, Display and Performance Max campaigns, bidding and tracking." },
+      { name: "SEO", icon: "google", desc: "Technical SEO, on-page, content and local ranking for Punjab businesses." },
+      { name: "AI-Powered Marketing", desc: "Using LLMs for research, copy, segmentation and reporting." },
+      { name: "WordPress", icon: "wordpress", desc: "Themes, plugins and a maintainable site you can hand to a client." },
+      { name: "Shopify", icon: "shopify", desc: "Storefronts, product data and checkout for a live e-commerce business." },
+    ],
+  },
+  {
+    key: "cyber-cloud",
+    label: "Cyber & Cloud",
+    blurb: "Offensive and defensive security, plus the infrastructure underneath it.",
+    courses: [
+      { name: "Cybersecurity", desc: "Threats, hardening, monitoring and incident response fundamentals." },
+      { name: "Ethical Hacking", icon: "kalilinux", desc: "Reconnaissance, exploitation and reporting in a live pentest lab." },
+      { name: "Cloud Computing", icon: "googlecloud", desc: "Compute, storage, networking and cost control on public cloud." },
+      { name: "AWS", desc: "EC2, S3, IAM and VPC, aligned to the Cloud Practitioner path." },
+      { name: "Linux", icon: "linux", desc: "Shell, permissions, services and the server skills every ops role needs." },
+    ],
+  },
+  {
+    key: "cad",
+    label: "Civil / Mechanical",
+    blurb: "Licensed CAD and CAM software, taught on real drawing sets.",
+    courses: [
+      { name: "AutoCAD", icon: "autocad", desc: "2D drafting and 3D modelling to industry drawing standards." },
+      { name: "SolidWorks", icon: "dassaultsystemes", desc: "Parametric part design, assemblies and manufacturing drawings." },
+      { name: "3ds Max", icon: "autodesk", desc: "Modelling, lighting and photoreal architectural visualisation." },
+      { name: "Revit", icon: "autodesk", desc: "BIM modelling and coordinated construction documentation." },
+    ],
+  },
+  {
+    key: "basics",
+    label: "Basic Skills",
+    blurb: "Office, accounts and computer fundamentals for a first job.",
+    courses: [
+      { name: "Basic Computer", desc: "Windows, files, internet and email for a confident first office job." },
+      { name: "MS Office", desc: "Word, Excel and PowerPoint to a practical working standard." },
+      { name: "Tally", desc: "GST-ready accounting, inventory and payroll in Tally Prime." },
+      { name: "Desktop Publishing (DTP)", desc: "Photoshop, CorelDRAW and InDesign for print-ready artwork." },
+      { name: "Typing", desc: "Speed and accuracy drills in English and Punjabi." },
+    ],
+  },
+];
+
+/** Flat list for the hero form's course dropdown. */
+export const HERO_FORM_COURSES = [
+  "Artificial Intelligence",
+  "Data Science",
+  "Full Stack Development",
+  "Digital Marketing",
+  "Cybersecurity & Ethical Hacking",
+  "Cloud Computing",
+  "Python",
+  "AutoCAD",
+  "Tally",
+  "Other",
+];
+
+export const BRANCH_DETAILS: {
+  city: string;
+  main?: boolean;
+  /** Street address as published by that centre. */
+  address?: string;
+  /** Towns the centre draws from — shown only where no address is published. */
+  areas?: string;
+}[] = [
+  {
+    city: "Jalandhar",
+    main: true,
+    address: "2nd Floor, Crystal Plaza, SCS 78, Opposite PIMS Hospital, Jalandhar, Punjab 144001",
+  },
+  {
+    city: "Mohali",
+    address:
+      "Plot No. F-547, 3rd Floor, Industrial Area 8A, Sector 75, Sahibzada Ajit Singh Nagar, Punjab 160055",
+  },
+  {
+    city: "Ludhiana",
+    address:
+      "1st Floor, Sear Complex, 773/1, Opposite BSNL Exchange, Bharat Nagar Chowk, Ludhiana, Punjab 141001",
+  },
+  {
+    city: "Phagwara",
+    address:
+      "Opposite Bus Stand, near Vishal Mega Mart, Above HDFC Bank, GT Road, Sondhi Chowk, Phagwara, Punjab 144401",
+  },
+  {
+    city: "Hoshiarpur",
+    address: "Shop No. 4, City Centre, near Bus Stand, Model Colony, Hoshiarpur, Punjab 146001",
+  },
+  {
+    city: "Amritsar",
+    address:
+      "3rd Floor, District Shopping Complex, SCO 28, B-Block, Ranjit Avenue, Amritsar, Punjab 143001",
+  },
+];
+
+export const GMB = {
+  rating: "4.9",
+  reviews: "556+",
+  alumni: "15K+",
+  profileUrl: "https://www.google.com/maps/search/techcadd+computer+education+jalandhar",
+};
